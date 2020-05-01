@@ -5,51 +5,84 @@
 </head>
 <body>
         
-    <div class="home">
+    <section class="home ativa">
         <div class="menu-out">
-            <div class="menu">
-                <div class="form-group">
-                    <h1><b class="text-success">Campo <i>Minado</i></b></h1>
-                </div>
-                <div class="form-group">
-                    <label>Defina o tamanho:</label>
-                    <select id="selectTamanho" class="form-control">
-                        <option value="10">10x10</option>
-                        <option value="15">15x15</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <button id="jogar" class="btn btn-secondary form-control">Jogar</button>
-                </div>
+        </div>
+        <div class="menu">
+            <div class="form-group">
+                <h1 style="font-family: monospace; font-size: 50px" class="text-secondary"><i>Corona Minad<i style="font-size: 70%; color: darkgreen" class="fas fa-virus"></i></i></h1>
+            </div>
+            <div class="form-group d-none">
+                <label>Defina o tamanho:</label>
+                <select id="selectTamanho" class="form-control">
+                    <option value="10">10x10</option>
+                    <option value="15">15x15</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <hr>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-lg btn-success form-control jogar">Jogar</button>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-lg btn-success form-control comoJogar">Como se joga?</button>
             </div>
         </div>
-    </div>
+        <div class="clear"></div>
+    </section>
     
-    <div class="game d-none">
+    <section class="game">
         <div class="placar row">
-            <div class="col-md-4">
-                <label>Pontos:</label>
-                <div class="inputPlacar labelPontos">0</div>
+            <div class="col-md-2 row">
+                <h6 class="col-md-6 text-secondary">Pontos:</h6>
+                <input disabled class="col-md-6 row form-control inputPlacar labelPontos bg-white" value="0">
             </div>
-            <div class="col-md-4">
-                <label>Bombas:</label>
-                <div class="inputPlacar labelBombas">0</div>
+            <div class="col-md-2 row">
+                <h6 class="col-md-6 text-secondary">Vírus:</h6>
+                <input disabled class="col-md-6 row form-control inputPlacar labelBombas bg-white" value="0">
             </div>
-            <div class="col-md-4">
-                <label>Tempo:</label>
-                <div class="inputPlacar labelTimer">8 Deitado</div>
+            <div class="col-md-2 row">
+                <h6 class="col-md-6 text-secondary">Tempo:</h6>
+                <input disabled class="col-md-6 row form-control inputPlacar labelTimer bg-white" value="8 Deitado">
+            </div>
+            <div class="col-md-2 ml-3 row">
+                <span style="font-size: 30px; color: deeppink" class="col-md-5"><i class="fas fa-soap"></i></span>
+                <input disabled class="col-md-3 row form-control inputPlacar bg-white" value="2">
+            </div>
+            <div class="col-md-2 row">
+                <span style="font-size: 30px" class="col-md-5 text-primary"><i class="fas fa-pump-soap"></i></span>
+                <input disabled class="col-md-3 row form-control inputPlacar bg-white" value="2">
+            </div>
+            <div class="col-md-2 row">
+                <div class="col-md-12">
+                    <button onclick="navegar('section.home')" class="btn btn-info">Menu <i class="fa fa-undo" aria-hidden="true"></i>
+</button>
+                </div>
             </div>
         </div>
         <div class="gamediv">
             <div class="div-botoes">
             </div>
         </div>
-    </div>
+    </section>
     
+    <section class="tutorial p-5">
+        <div class="row">
+            <div class="col-md-6">Estou na pag de info</div>
+            <div class="col-md-6">Estou na pag de info</div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <button class="btn btn-lg btn-success form-control jogar">Jogar</button>
+            </div>
+        </div>
+    </section>
+    
+    <script src="https://kit.fontawesome.com/0f08d52c86.js" crossorigin="anonymous"></script>
     <script src="https://use.fontawesome.com/7168f28e96.js"></script>
     <script src="index.js"></script>
     <script>
-        
     </script>
 </body>
 </html>
