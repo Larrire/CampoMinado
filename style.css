@@ -8,9 +8,8 @@ html,body{
     height: 100%;
     padding: 0;
     margin: 0;
-    background-color: red;
+    background-color: lightblue;
     box-sizing: border-box;
-    background-image: url("assets/images/bombas.png");
     background-repeat: repeat;
     background-size: 300px;
     height: 100%;
@@ -42,20 +41,24 @@ div.gamediv,div.placar{
 }
 
 div.placar{
-    background: #ddd;
+    background: lightcyan;
 }
 
 .div-botoes{
-    width: 450px;
     padding: 20px;
     margin: 0 auto;
     text-align: center;
-    background: #aaa;
 }
 
 button.botao{
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
+    border: 0;
+    background: rgba(224, 255, 255, 0.9);
+    margin: 1px;
+}
+button.botao:hover{
+    background: rgba(224, 255, 255, 0.3);
 }
 
 div.inputPlacar{
@@ -68,7 +71,7 @@ div.inputPlacar{
 }
 
 button.clicado{
-    background: lightgreen;
+    background: white;
 }
 
 
