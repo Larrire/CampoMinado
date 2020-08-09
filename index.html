@@ -6,10 +6,10 @@
         <button onclick="startGame()">Start game</button>
 </div>
 <script type="text/javascript">
+    EJS_gameUrl = 'bomberman4.sfc'; // Url to Game rom
     function startGame(){
             const gameId = document.querySelector("#gameID").value;
             EJS_player = '#game';
-            EJS_gameUrl = 'bomberman4.sfc'; // Url to Game rom
             EJS_gameID = gameId; // ID in your website, required for netplay.
             EJS_core = 'snes';
             EJS_mouse = false; // SNES Mouse
