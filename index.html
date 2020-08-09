@@ -1,20 +1,14 @@
 <div style="width:640px;height:480px;max-width:100%">
         <div id="game"></div>
-      </div>
-<div>
-        <input type="text" id="gameID" >
-        <button onclick="startGame()">Start game</button>
 </div>
 <script type="text/javascript">
+    const gameId = (Math.random() * 20).toFixed(0);
     EJS_gameUrl = 'bomberman4.sfc'; // Url to Game rom
-    function startGame(){
-            const gameId = document.querySelector("#gameID").value;
-            EJS_player = '#game';
-            EJS_gameID = gameId; // ID in your website, required for netplay.
-            EJS_core = 'snes';
-            EJS_mouse = false; // SNES Mouse
-            EJS_multitap = false; // SNES Multitap
-    }
+    EJS_player = '#game';
+    EJS_gameID = gameId; // ID in your website, required for netplay.
+    EJS_core = 'snes';
+    EJS_mouse = false; // SNES Mouse
+    EJS_multitap = false; // SNES Multitap
 </script>
 <script src="https://www.emulatorjs.com/loader.js"></script>
 <script src="https://www.emulatorjs.com/webrtc-adapter.js"></script>
