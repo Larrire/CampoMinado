@@ -4,22 +4,22 @@
 </head>
 <body>
         <div style="width:100%;height:100%;max-width:100%">
-        <div id="game"></div>
+                <div id="game"></div>
         </div>
+        
         <script type="text/javascript">
-        EJS_netplayUrl = "https://larrire-emulatorjs-server.onrender.com";
-
-        EJS_maxParticipantsAllowed = 5
-        maxParticipantsAllowed = 5
-                
         EJS_player = '#game';
         EJS_gameUrl = 'bomberman5.sfc'; // Url to Game rom
-        EJS_gameID = 9784652; // ID in your website, required for netplay.
         EJS_core = 'snes';
-        EJS_oldCores = true;
         EJS_mouse = false; // SNES Mouse
         EJS_multitap = true; // SNES Multitap
         EJS_onGameStart = () => console.log('jogo iniciado')
+
+        // Netplay configs
+        EJS_gameID = 1; // ID in your website, required for netplay.
+        EJS_oldCores = true;
+        EJS_netplayUrl = "https://larrire-emulatorjs-server.onrender.com";
+        EJS_maxParticipantsAllowed = 5
 
         window.onload = () => console.log('v2.3')
 
