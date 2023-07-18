@@ -20,14 +20,18 @@
         EJS_gameID = 1; // ID in your website, required for netplay.
         EJS_oldCores = true;
         EJS_netplayUrl = "https://larrire-emulatorjs-server.onrender.com";
-        EJS_oldEJSNetplayServer = "https://larrire-emulatorjs-server.onrender.com";
+        EJS_oldEJSNetplayServer = true
         EJS_maxParticipantsAllowed = 5
         EJS_pathtodata = '/data/';
 
-        window.onload = () => console.log('v2.4')
+        window.onload = () => console.log('v2.5')
+
+                // loader.js
+                // https://www.emulatorjs.com/loader.js
+                // https://raw.githubusercontent.com/larrire/emulatorjs/main/data/loader.js
 
         </script>
-        <script src="https://www.emulatorjs.com/loader.js"></script>
+        <script src="https://raw.githubusercontent.com/larrire/emulatorjs/main/data/loader.js"></script>
         <script src="https://www.emulatorjs.com/webrtc-adapter.js"></script>
 </body>
 </html>
